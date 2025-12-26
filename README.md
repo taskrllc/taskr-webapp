@@ -1,38 +1,45 @@
-# sv
+# taskr-webapp
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This repo contains the web frontend, backend, and API of the taskr platform application.
 
-## Creating a project
+> [!WARNING]
+> **Leakage will not be tolerated.**
+> In order to keep intellectual property over this repository, we forbid the disclosure/leakage of any code/asset hosted within.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Running locally
 
+> [!WARNING]
+> Windows is **not** supported, never will be.
+> If you are on Windows and want to host the web application, consider using [WSL](). 
+
+First, install the prerequisites using your package manager:
+- `git`
+- `npm`
+- `rust` (using [rust-up]())
+
+Then clone the repository and `cd` into it:
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/taskrllc/taskr-webapp.git
+cd taskr-webapp
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+And finally run the application locally:
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm run dev-all
 ```
 
-## Building
-
-To create a production version of your app:
-
+Or build it:
 ```sh
-npm run build
+npm run build-all
 ```
 
-You can preview the production build with `npm run preview`.
+## Contributing
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+> [!INFO]
+> We use pull requests in order to merge commits. Only the CTO is authorized to approve/disapprove pull requests.
+
+- If you are working on a **small change/fix** -> commit to the `devel` branch.
+- If you are working on a **large addition/feature** -> create a new branch dedicated to said feature, forked from the `devel` branch. When the commit is ready, merge into the `devel` branch.
+
+> [!WARNING]
+> Never directly commit to the `main` branch. Your pull request will be closed.
