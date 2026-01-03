@@ -7,9 +7,8 @@
     <div>
       <h1 class="text-5xl font-bold">taskr</h1>
       <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi.
+        Welcome to Taskr, a platform where you can clean and
+        get money and stuff. Very good and fun! 10/10
       </p>
       <button class="btn btn-primary">Get Started</button>
     </div>
