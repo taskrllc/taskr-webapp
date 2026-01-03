@@ -1,9 +1,10 @@
 <script lang="ts">
+ import logo from "$lib/assets/logo-transparent.png"
 </script>
 
 <div class="hero bg-base-200 min-h-screen">
   <div class="hero-content flex-col lg:flex-row">
-    <img src="/logo-transparent.png" alt="" />
+    <img src={logo} alt="" />
     <div>
       <h1 class="text-5xl font-bold">taskr</h1>
       <p class="py-6">
