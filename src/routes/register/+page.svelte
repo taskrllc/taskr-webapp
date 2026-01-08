@@ -15,15 +15,16 @@
                             class="input"
                             placeholder="Password"
                         />
-                        <div>
-                            <a class="link link-hover" href="/recover"
-                                >Forgot password?</a
-                            >
-                        </div>
+                        <label class="label">Confirm Password</label>
+                        <input
+                            type="password"
+                            class="input"
+                            placeholder="Password"
+                        />
                         <button class="btn btn-neutral mt-4">Login</button>
                         <div>
-                            <a class="link link-hover" href="/register"
-                                >Don't have an account?</a
+                            <a class="link link-hover" href="/login"
+                                >Already have an account?</a
                             >
                         </div>
                     </fieldset>

@@ -2,11 +2,14 @@
 
 This repo contains the web frontend, backend, and API of the taskr platform application.
 
-> [!WARNING]
-> **Leakage will not be tolerated.**
-> In order to keep intellectual property over this repository, we forbid the disclosure/leakage of any code/asset hosted within.
+# Security
 
-## Running locally
+**Leakage will not be tolerated.**
+- In order to keep intellectual property over this repository, we forbid the disclosure/leakage of any code/asset hosted within.
+
+*More security measures will be added later.*
+
+# Hosting
 
 > [!WARNING]
 > Windows is **not** supported, never will be.
@@ -33,13 +36,13 @@ Or build it:
 npm run build-all
 ```
 
-## Contributing
+# Contributing
 
-> [!INFO]
+> [!NOTE]
 > We use pull requests in order to merge commits. Only the CTO is authorized to approve/disapprove pull requests.
 
 - If you are working on a **small change/fix** -> commit to the `devel` branch.
 - If you are working on a **large addition/feature** -> create a new branch dedicated to said feature, forked from the `devel` branch. When the commit is ready, merge into the `devel` branch.
 
 > [!WARNING]
-> Never directly commit to the `main` branch. Your pull request will be closed.
+> Never directly commit to the `master` branch. Your pull request will be closed.

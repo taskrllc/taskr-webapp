@@ -14,5 +14,5 @@ argon2 = "0.5.3"
 lazy_static = "1.5.0"
 
 [[bin]]
-name = "hsb-website"
+name = "taskr-app"
 path = "backend/main.rs"
