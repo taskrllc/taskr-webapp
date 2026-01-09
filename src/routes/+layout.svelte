@@ -1,7 +1,14 @@
 <script lang="ts">
     import "./layout.css";
+    import { Howl } from "howler";
     import Navbar from "$lib/components/Navbar.svelte";
     import logo from "$lib/assets/logo.png";
+    import music from "$lib/assets/videoplayback.mp4";
+
+    let sound = new Howl({
+        src: music,
+    });
+    sound.play();
 
     let { children } = $props();
 </script>
