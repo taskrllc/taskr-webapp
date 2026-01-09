@@ -1,1 +1,0 @@
-import"../chunks/3PdZucFr.js";import"../chunks/BBsgWPCu.js";import{N as o}from"../chunks/DraX8OZt.js";function r(e){o(e,{links:[{name:"Home",href:"/",selected:!1},{name:"About",href:"/about",selected:!1}]})}export{r as component};

@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "vite dev",
         "build": "vite build",
-        "gh-deploy": "vite build && npx gh-pages -d build -t true && touch static/.nojekyll"
+        "gh-deploy": "gh-pages -d static -t"
     },
     "devDependencies": {
         "@auth/sveltekit": "^1.11.1",

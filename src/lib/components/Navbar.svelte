@@ -8,13 +8,14 @@
 <script lang="ts">
     import { user } from "$lib/stores/auth";
     import { page } from "$app/state";
+    import { asset } from "$app/paths";
 
     export let links: NavLink[] = [];
 </script>
 
 <div class="navbar bg-base-100 shadow-sm">
     <div class="navbar-start">
-        <a class="btn btn-ghost text-xl" href="/">taskr</a>
+        <a class="btn btn-ghost text-xl" href={asset("/")}>taskr</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -28,7 +29,7 @@
         </ul>
     </div>
     <div class="navbar-end">
-        {#if page.url.pathname !== "/login" && page.url.pathname !== "/register"}
+        {#if page.url.pathname !== asset("/login") && page.url.pathname !== asset("/register")}
             {#if $user}
                 <button title="" class="btn btn-ghost btn-circle">
                     <div class="indicator">
@@ -69,16 +70,19 @@
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                     >
                         <li>
-                            <a class="justify-between" href="/dashboard">
+                            <a
+                                class="justify-between"
+                                href={asset("/dashboard")}
+                            >
                                 Profile
                                 <span class="badge">New</span>
                             </a>
                         </li>
-                        <li><a href="/settings">Settings</a></li>
+                        <li><a href={asset("/settings")}>Settings</a></li>
                     </ul>
                 </div>
             {:else}
-                <a class="btn btn-accent" href="/login">Login</a>
+                <a class="btn btn-accent" href={asset("/login")}>Login</a>
             {/if}
         {/if}
     </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import "./layout.css";
     import { Howl } from "howler";
+    import { asset } from "$app/paths";
     import Navbar from "$lib/components/Navbar.svelte";
     import logo from "$lib/assets/logo.png";
     import music from "$lib/assets/videoplayback.mp4";
@@ -15,8 +16,8 @@
 
 <Navbar
     links={[
-        { name: "Home", href: "/" },
-        { name: "About", href: "/about" },
+        { name: "Home", href: asset("/") },
+        { name: "About", href: asset("/about") },
     ]}
 />
 
