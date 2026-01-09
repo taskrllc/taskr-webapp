@@ -1,3 +1,7 @@
+<script lang="ts">
+    import { asset } from "$app/paths";
+</script>
+
 <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content flex-col lg:flex-row-reverse">
         <div
@@ -23,7 +27,7 @@
                         />
                         <button class="btn btn-neutral mt-4">Login</button>
                         <div>
-                            <a class="link link-hover" href="/login"
+                            <a class="link link-hover" href={asset("/login")}
                                 >Already have an account?</a
                             >
                         </div>
