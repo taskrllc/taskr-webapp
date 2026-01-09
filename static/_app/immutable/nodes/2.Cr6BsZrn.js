@@ -1,0 +1,1 @@
+import"../chunks/C-p5Ceqe.js";import"../chunks/tiQReHcb.js";import{N as e}from"../chunks/DPMmx6mU.js";function t(o){e(o,{page:"Home",links:[{name:"Home",href:"/"},{name:"About",href:"/about"}]})}export{t as component};
