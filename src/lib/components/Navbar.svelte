@@ -6,7 +6,6 @@
 </script>
 
 <script lang="ts">
-    import { logout } from "$lib/auth";
     import { user } from "$lib/stores/auth";
     import { page } from "$app/state";
 
@@ -76,7 +75,6 @@
                             </a>
                         </li>
                         <li><a href="/settings">Settings</a></li>
-                        <li><button onclick={logout}>Logout</button></li>
                     </ul>
                 </div>
             {:else}
