@@ -29,7 +29,7 @@
         </ul>
     </div>
     <div class="navbar-end">
-        {#if page.url.pathname !== "/login"}
+        {#if page.url.pathname !== "/login" && page.url.pathname !== "/register"}
             {#if $user}
                 <button title="" class="btn btn-ghost btn-circle">
                     <div class="indicator">

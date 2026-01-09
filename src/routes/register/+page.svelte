@@ -4,7 +4,7 @@
             class="card card-border bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
         >
             <div class="card-body">
-                <h2 class="card-title">Login</h2>
+                <h2 class="card-title">Register</h2>
                 <fieldset class="fieldset">
                     <fieldset class="fieldset">
                         <label class="label">Email</label>
