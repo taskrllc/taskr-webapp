@@ -1,4 +1,61 @@
 @import "tailwindcss";
-@plugin 'daisyui' {
-    themes: cupcake --default;
+@plugin "daisyui" {
+    themes: mytheme --default
+}
+
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  color-scheme: light;
+
+  /* Base surfaces (clean light UI) */
+  --color-base-100: oklch(99% 0.005 250);
+  --color-base-200: oklch(96% 0.01 250);
+  --color-base-300: oklch(92% 0.015 250);
+  --color-base-content: oklch(22% 0.02 250);
+
+  /* Primary — EF5350 */
+  --color-primary: oklch(62% 0.23 25);
+  --color-primary-content: oklch(98% 0.005 25);
+
+  /* Secondary (neutral slate) */
+  --color-secondary: oklch(48% 0.04 250);
+  --color-secondary-content: oklch(98% 0.005 250);
+
+  /* Accent (success-friendly green) */
+  --color-success: oklch(62% 0.23 25);
+  --color-success-content: oklch(98% 0.005 25);
+
+  /* Neutral */
+  --color-neutral: oklch(35% 0.02 250);
+  --color-neutral-content: oklch(98% 0.005 250);
+
+  /* Status colors */
+  --color-info: oklch(70% 0.18 240);
+  --color-info-content: oklch(98% 0.005 240);
+
+  --color-success: oklch(66% 0.22 145);
+  --color-success-content: oklch(98% 0.005 145);
+
+  --color-warning: oklch(80% 0.18 85);
+  --color-warning-content: oklch(25% 0.02 85);
+
+  --color-error: oklch(62% 0.23 25);
+  --color-error-content: oklch(98% 0.005 25);
+
+  /* Border radius */
+  --radius-selector: 1rem;
+  --radius-field: 250rem;
+  --radius-box: 1rem;
+
+  /* Base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* Border */
+  --border: 1px;
+
+  /* Effects */
+  --depth: 1;
+  --noise: 0;
 }
