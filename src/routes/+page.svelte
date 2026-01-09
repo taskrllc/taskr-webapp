@@ -4,7 +4,19 @@
 
 <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content flex-col lg:flex-row">
-        <img src={logo} alt="" />
+        <div class="hover-3d">
+            <figure class="max-w-100 rounded-2xl">
+                <img src={logo} alt="" />
+            </figure>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div>
             <h1 class="text-5xl font-bold">taskr</h1>
             <p class="py-6">

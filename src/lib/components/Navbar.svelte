@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             {:else}
-                <a class="btn" href="/login">Login</a>
+                <a class="btn btn-accent" href="/login">Login</a>
             {/if}
         {/if}
     </div>
